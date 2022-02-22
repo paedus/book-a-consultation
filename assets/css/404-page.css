@@ -1,0 +1,8 @@
+.no-found-wrap {
+    margin-top: 48px;
+}
+@media(min-width: 768px) {
+    .no-found-wrap {
+        margin-top: 96px;
+    }
+}

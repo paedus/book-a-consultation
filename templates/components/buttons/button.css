@@ -1,0 +1,224 @@
+.btm-comp {
+	width: 312px;
+	height: 608px
+}
+
+.btn {
+	max-width: 248px;
+	width: 100%;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	position: relative;
+	overflow: hidden;
+	margin: auto;
+	transition: 0s;
+}
+
+.btn:before {
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.btn:focus:before,
+.btn:hover:before {
+	opacity: 0.5;
+}
+
+.btn:hover:before {
+	background: rgba(51, 51, 51, 0.2);
+
+}
+
+.btn:focus:before {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.btn-outline-prim,
+.btn-outline-secon {
+	background-color: transparent !important;	
+}
+
+.btn-outline-prim {
+	border: 1px solid var(--prim) !important;
+}
+
+.btn-icon {
+	position: absolute;
+	top: 12px;
+	left: 17px;
+	left: 12px;
+}
+
+.btn-outline-secon {
+	border: 1px solid var(--secon) !important;
+}
+
+.btn-prim:hover,
+.btn-secon:hover {
+	color: var(--white);
+}
+
+.btn-outline-prim:hover {
+	color: var(--prim);
+}
+
+.btn-outline-secon:hover {
+	color: var(--secon);
+}
+
+
+/*sharing bar*/
+.scriptlesssocialsharing {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    /*max-width: 110px;*/
+    width: 100%;
+    height: 48px;
+    /*background-color: var(--grey);*/
+    border-radius: 15px;
+    padding: 0 18px;
+    will-change: transform;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.scriptlesssocialsharing:hover {
+    /* transition-delay: .4s; */
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+	max-width: 400px;				  
+}
+
+.scriptlesssocialsharing:before {
+    content: 'Share';
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 44px;
+    border-radius: 80px;
+    text-align: center;
+    line-height: 48px;
+    /*letter-spacing: 2px;*/
+/*    color: var(--secon);*/
+    /*background-color: var(--grey);*/
+    padding: 0 18px;
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.scriptlesssocialsharing:before:hover {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}									   
+
+.scriptlesssocialsharing__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 64px;
+    border-radius: 80px;
+}
+
+.scriptlesssocialsharing__buttons a {
+    padding: 0;
+    opacity: 0;
+    font-size: 28px;
+    color: #1F1E1E;
+    will-change: transform;
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+svg.scriptlesssocialsharing__icon {
+    margin-top: 5px;
+}
+
+.prim .scriptlesssocialsharing__buttons .scriptlesssocialsharing__icon {
+    color: var(--prim);
+}
+.scriptlesssocialsharing__buttons .scriptlesssocialsharing__icon {
+    color: var(--secon);
+}
+.secon .scriptlesssocialsharing__buttons .scriptlesssocialsharing__icon {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    max-height: none;
+}
+
+
+.scriptlesssocialsharing__buttons a:nth-of-type(1) {
+    -webkit-transition-delay: 1.4s;
+            transition-delay: 1.4s;
+}
+
+.scriptlesssocialsharing__buttons a:nth-of-type(2) {
+    -webkit-transition-delay: 1.2s;
+            transition-delay: 1.2s;
+}
+
+.scriptlesssocialsharing__buttons a:nth-of-type(3) {
+    -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+}
+
+.scriptlesssocialsharing__buttons a:nth-of-type(4) {
+    -webkit-transition-delay: .8s;
+            transition-delay: .8s;
+}
+
+.scriptlesssocialsharing__buttons a:nth-of-type(5) {
+    -webkit-transition-delay: .6s;
+            transition-delay: .6s;
+}
+
+.scriptlesssocialsharing__buttons a:nth-of-type(6) {
+    -webkit-transition-delay: .4s;
+            transition-delay: .4s;
+}
+
+.scriptlesssocialsharing:hover:before {
+    -webkit-transition-delay: .25s;
+            transition-delay: .25s;
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px)
+}
+
+.scriptlesssocialsharing:hover a {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+        cursor: pointer;
+        padding: 0 10px;
+}
+
+.scriptlesssocialsharing__buttons a.button {
+    background-color: unset;
+}

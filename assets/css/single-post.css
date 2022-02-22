@@ -1,0 +1,107 @@
+
+
+/** [ Before Content Date CSS ] **/
+#before_content_date .icon-calendar {
+    margin-right: -7px;
+}
+
+
+/** [ Content CSS ] **/
+
+#primary.content-area.primary {
+    width: 800px;
+    padding: 0 24px;
+    margin: 0 auto;
+    float: none;
+}
+.media_with_caption .blog-content-img {
+    margin-bottom: 10px!important;
+}
+img.blog-content-img {
+    width: 640px;
+    max-width: 100%;
+    border-radius: 15px;
+    float: none
+}
+#primary .cta-section {
+    margin-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+#primary .cta-section .cta-section-title {
+    max-width: 320px;
+    margin: 0 auto;
+}
+#primary .cta-section .cta-section-img {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.post_related_posts-gallery .paragraph-span {
+    margin-bottom: 0;
+}
+.media_with_caption .image_small_caption {
+    display: block;
+}
+
+
+/** [ Content Shortcodes CSS ] **/
+
+.text_with_line {
+    padding-left: 16px;
+    margin: 24px 0;
+    border-left: 3px solid var(--prim);
+}
+.post_quote {
+    margin: 34px 0;
+    position: relative;
+    padding: 0 40px;
+}
+.post_quote .quotemarks-left {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 24px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border-radius: 0;
+    max-width: unset;
+}
+.post_quote .quotemarks-left:last-child {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: -2px;
+}
+
+/** [ Related products CSS ] **/
+
+.post_related_products-gallery {
+    padding: 30px 0;
+}
+.post_related_products-gallery .paragraph-span {
+    margin-bottom: 0;
+}
+.post_related_posts-gallery .heading2,
+.post_related_products-gallery .heading2 {
+    max-width: 365px;
+    margin-bottom: 30px;
+}
+.post_related_posts-gallery .you-might-also-like .heading2 {
+    margin: 0!important;
+}
+.post_related_posts-gallery .you-might-also-like {
+    padding-top: 0;
+}
+@media(max-width: 840px) {
+    #primary.content-area.primary {
+        width: 100%;
+        padding: 0 8px;
+    }
+}
+@media(max-width: 768px) {
+    img.blog-content-img {
+    }
+}

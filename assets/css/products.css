@@ -1,0 +1,111 @@
+.desc-img{
+	width: 100%;
+}
+
+a.quick-access-link{
+	margin-right: 20px;
+	white-space: nowrap;
+    transition: unset;
+}
+
+a.quick-access-link:last-child{
+	margin-right: 0;
+}
+
+section.quick-access{
+	overflow: scroll;
+}
+
+.quick-access-wrap {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: 16px;
+}
+.quick-access {
+	padding: 24px 0px;
+}
+
+.accommodation-description {
+/*	padding: 56px 0;*/
+	overflow: hidden;
+}
+.accommodation-description .ast-container {
+	position: relative;
+}
+.accommodation-description-img .desc-img {
+    height: 280px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.our-opinion-text {
+	max-width: 800px;
+	font-style: italic;
+	font-weight: 600;
+	margin: 0 auto;
+}
+
+/*remove when button add to wishlist is active*/
+.cta-section-btns {
+    max-width: 576px;
+}
+
+@media (max-width: 767px) {
+	.accommodation-description-img .desc-img {
+	    position: relative;
+	    right: -20px;
+	    margin: 0 0 24px 15px;
+	}
+	/*Accommodations single spaces*/
+	.hero-location {
+		margin-top: 10px;
+	}
+	.our-opinion-text {
+		padding: 0 7px;
+	}
+	.newsletter-signup ._form {
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+	.newsletter-signup ._form-label {
+		display: none;
+	}
+}
+
+@media (min-width:600px) {
+
+	.quick-access-wrap {
+	    width:100%;
+	}
+
+	section.quick-access {
+	    overflow: hidden;
+	}
+}
+@media (min-width: 768px) {
+	.accommodation-description-right {
+		width: 50%;
+		padding-right: 50px;
+	}
+	.accommodation-description-img {
+	    width: 50%;
+	    position: absolute;
+	    top: 100%;
+	    right: 0;
+	    max-width: 933px;
+	}	
+	.accommodation-description-img .desc-img {
+		height: 816px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	.accommodation-description-right {
+		width: 35%;
+	}
+	.accommodation-description-img {
+	    width: 65%;
+	}	
+}

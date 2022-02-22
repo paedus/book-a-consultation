@@ -1,0 +1,81 @@
+.d-block {
+	display: block !important;
+}
+
+.home-about .ast-container {
+	max-width: 1022px;
+}
+
+.home-about-img {
+	margin: 51px auto 24px;
+	width: 246px;
+}
+
+.home-about .heading3 {
+	max-width: 290px;
+}
+
+.home-about .body-txt  {
+	margin-bottom: 20px;
+	max-width: 320px;
+}
+
+.steps-img {
+	margin: 48px 0 8px 0;
+}
+
+.home-key-values .body-txt {
+	max-width: 600px;
+}
+
+.home-key-values .ast-row {
+	max-width: 1090px;
+}
+
+.engage-text {
+	max-width: 600px;
+}
+
+.home-subtitle{
+	margin-bottom:40px;
+}
+
+.home-we-work-block{
+	max-width: 480px;
+}
+
+/*.entry-content p.testimonial-text{
+	margin-bottom: 8px;
+}*/
+.testimonials-wrap{
+
+	max-width:320px
+}
+
+
+.product-card-map .icon-calendar{
+	filter: hue-rotate(341deg) invert(0.7) saturate(10) brightness(0.6);
+}
+
+
+.home-inspiration .product-card{
+	width: 100%;
+	height: 320px;
+	max-width:320px;
+	max-height:320px;
+}
+
+@media (min-width: 768px) {
+	.home-about .ast-col-md-4 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.home-about .body-txt {
+		margin-bottom: 0;
+	}
+	.about-subtitle {
+    	min-height: 72px;
+	}
+
+}

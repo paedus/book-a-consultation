@@ -1,0 +1,36 @@
+/* Pop up icon */
+
+.pop-up-icon {
+	max-width: 480px;
+	width: 100%;
+	min-height: 480px;
+	position: relative;
+	border-radius: 15px;
+	padding: 48px 0 32px;
+}
+
+.pop-up-icon-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 32px;
+	height: 32px;
+	filter: brightness(0) invert(1);
+	cursor: pointer;
+}
+
+.pop-up-icon-title {
+	margin: 40px 0 34px;
+}
+
+.pop-up-icon-title-illus {
+	margin-bottom: 18px;
+}
+
+.pop-up-icon-desc {
+	max-width: 280px;
+}
+
+.pop-up-icon-desc-illus {
+	max-width: 360px;
+}

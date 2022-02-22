@@ -1,0 +1,110 @@
+.contact-page-content .contact-right-logo {
+    width: 203px;
+    height: 96px;
+    margin-bottom: 40px;
+    display: block;
+}
+.contact-page-content {
+    width: 265px;
+    text-align: left;
+}
+.contact-address-part .icon-sprite{
+    margin-right: 6px;
+}
+.contact-email-pat .icon-sprite,
+.contact-phone-part .icon-sprite {
+    margin-right: 16px;
+}
+.contact-social {
+    gap: 16px;
+    justify-content: center;
+}
+.contact-social .icon-sprite {
+    -webkit-transform: scale(1.335);
+    -ms-transform: scale(1.335);
+    transform: scale(1.335);
+}
+.contact-form {
+    width: 100%;
+    max-width: 327px;
+}
+.ff-el-input--label .field-label::after{
+    display: none;
+}
+.default-textarea.ff-el-form-control,
+.default-input.ff-el-form-control {
+    border: none;
+    border-bottom: 1px solid;
+    border-color: var(--secon);
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    outline: none;
+    border-radius: 0;
+    color: var(--secon);
+    font-family: 'Poppins', sans-serif;
+}
+.default-textarea.ff-el-form-control {
+    resize: none;
+    display: block;
+}
+.default-textarea.ff-el-form-control,
+.default-input.ff-el-form-control:focus {
+    border-color: var(--secon);
+}
+.default-textarea.ff-el-form-control::-webkit-input-placeholder,
+.default-input.ff-el-form-control::-webkit-input-placeholder { /* Edge */
+    color: var(--grey);
+}
+.default-textarea.ff-el-form-control:-ms-input-placeholder,
+.default-input.ff-el-form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--grey);
+}
+.default-textarea.ff-el-form-control::placeholder,
+.default-input.ff-el-form-control::placeholder {
+    color: var(--grey);
+}
+.ff-el-group {
+    margin-top: 16px;
+}
+.ff_submit_btn_wrapper {
+    margin-top: 24px;
+}
+.ff-el-input--label .field-label {
+    display: block;
+}
+.contact-page-content-wrap {
+    padding: 23px 32px;
+}
+.ff-el-form-check .ff_tc_checkbox {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+@media(min-width: 1024px) {
+    .contact-page-main-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+    }
+    .contact-page-main-content::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 50%;
+        left: 50%;
+        background-color: #fff;
+    }
+    .contact-page-content-wrap,
+    .contact-page-form-wrap {
+        width: 50%;
+        position: relative;
+        z-index: 1;
+    }
+    .contact-form {
+        max-width: 432px;
+    }
+}
