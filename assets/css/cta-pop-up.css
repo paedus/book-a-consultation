@@ -47,3 +47,77 @@
     display:block
 }
 
+/***********[STEPPED FORM]**********/
+
+.stepped-form-container {
+    padding-top: 40px;
+    max-width: 375px;
+    height: 800px;
+    max-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--ter);
+}
+.form-steps-wrapper {
+    margin-bottom: 40px;
+}
+.stepped-form-container.stepped-form-main-screen {
+    padding-top: 64px;
+}
+.stepped-form-content .heading3 {
+    max-width: 256px;
+    margin-bottom: 32px!important;
+
+}
+.stepped-form-screen-content {
+    display: none;
+    padding: 0 16px;
+}
+.stepped-form-screen-content.active-screen {
+    display: block;
+}
+.stepped-form-container.form-main-screen {
+    padding-top: 64px;
+}
+.book-consultation-form-header {
+
+}
+.form-steps {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.form-step {
+    width: 56px;
+    height: 8px;
+    background-color: #BDBDBD;
+    border-radius: 15px;
+    margin: 0 8px;
+    list-style-type: none;
+}
+.form-step.active-step {
+    background-color: #C3A260;
+}
+.stepped-form-footer {
+    height: 82px;
+    border-top: 1px solid #BDBDBD;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#popup-cancel-button {
+    cursor: pointer;
+    flex-basis: 123px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 50px;
+}
+.stepped-form-footer .btn.cta {
+    flex-basis: 123px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+}

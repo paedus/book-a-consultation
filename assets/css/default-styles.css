@@ -95,7 +95,8 @@ body {
 .link-bold, 
 .heading1, 
 .heading2, 
-.heading3, 
+.heading3,
+.bold-txt,
 .txt-link {
 	font-weight: bold;
 }

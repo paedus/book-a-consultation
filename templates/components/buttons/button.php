@@ -167,3 +167,43 @@ function get_sharebutton_defaults($args=array()){
 
 	return $args;
 }
+
+function form_radio_button($args) {
+    ?>
+
+    <div class="form-radio-button mb24">
+        <div class="form-radio-btn-check"></div>
+        <input type="radio" required class="radio-button-input" name="form-choices" value="<?= $args['value'] ?>">
+        <span class="radio-button-title intro-txt txt-center"><?= $args['title'] ?></span>
+    </div>
+
+    <?php
+}
+
+
+function listed_radio_buttons($args) {
+
+    $buttons = $args['buttons'];
+
+    foreach($buttons as $button) {
+
+        form_radio_button($button);
+
+    }
+
+}
+
+function the_listed_radio_buttons($args=array()) {
+
+    if( empty($args['buttons']) ) return false;
+
+    ?>
+
+    <div class="listed-radio-buttons">
+
+        <?php listed_radio_buttons($args); ?>
+
+    </div>
+
+    <?php
+}

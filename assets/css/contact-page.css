@@ -31,6 +31,7 @@
 .ff-el-input--label .field-label::after{
     display: none;
 }
+.form-field .form-field-input,
 .default-textarea.ff-el-form-control,
 .default-input.ff-el-form-control {
     border: none;
@@ -48,18 +49,76 @@
     resize: none;
     display: block;
 }
+.form-field .form-field-input:focus,
 .default-textarea.ff-el-form-control,
 .default-input.ff-el-form-control:focus {
     border-color: var(--secon);
+    background-color: transparent;
 }
+.form-field-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*.form-field-checkbox*/
+/*.form-field-checkbox-icon {*/
+/*    width: 32px;*/
+/*    height: 32px;*/
+/*    border-radius: 50%;*/
+/*    border: 2px solid var(--prim);*/
+/*}*/
+.form-field-checkbox .form-field-label {
+    display: block;
+    width: calc( 100% - 50px);
+}
+.form-field-label .small-txt {
+    margin-bottom: 0;
+}
+.form-std {
+    padding: 0 44px;
+}
+.form-field-checkbox .form-field-input::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--prim);
+    opacity: 1;
+    visibility: visible;
+    margin-top: -16px;
+}
+.form-field-checkbox .form-field-input:checked::before {
+    background-image: url('../../templates/components/buttons/Checkbox.svg');
+    border: none;
+}
+.form-field-checkbox .form-field-input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.form-field .form-field-input::-webkit-input-placeholder,
 .default-textarea.ff-el-form-control::-webkit-input-placeholder,
 .default-input.ff-el-form-control::-webkit-input-placeholder { /* Edge */
     color: var(--grey);
 }
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: transparent;
+}
+.phone-field::-webkit-outer-spin-button,
+.phone-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.thank-you-txt {
+    line-height: 24px;
+}
+.form-field .form-field-input:-ms-input-placeholder,
 .default-textarea.ff-el-form-control:-ms-input-placeholder,
 .default-input.ff-el-form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: var(--grey);
 }
+.form-field .form-field-input::placeholder,
 .default-textarea.ff-el-form-control::placeholder,
 .default-input.ff-el-form-control::placeholder {
     color: var(--grey);

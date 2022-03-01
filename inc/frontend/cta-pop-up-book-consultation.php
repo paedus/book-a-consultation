@@ -14,7 +14,7 @@ function cta_pop_up_bookacall() {
     ?>
     <div id="cta-pop-up-bookacall" class="cta-pop-up-wrapper">
         <div id="cta-pop-up-container">
-            <iframe src="<?=get_home_url()?>/pop-up-form/?form=bookacall" id="cta-pop-up-iframe" loading="lazy" frameborder="0"></iframe>
+            <iframe src="<?=get_home_url()?>/book-a-consultation" id="cta-pop-up-iframe" loading="lazy" frameborder="0"></iframe>
             <div class="cta-pop-up-close">
                 <?php the_icon('cancel-dark', false ); ?>
             </div>

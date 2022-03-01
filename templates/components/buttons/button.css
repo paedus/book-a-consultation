@@ -222,3 +222,52 @@ svg.scriptlesssocialsharing__icon {
 .scriptlesssocialsharing__buttons a.button {
     background-color: unset;
 }
+
+.listed-radio-buttons {
+    margin: 0;
+}
+label.error {
+    display: none!important;
+}
+.radio-button-input {
+    visibility: hidden;
+    opacity: unset;
+}
+.form-radio-button {
+    width: 312px;
+    padding: 24px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.form-radio-button:hover {
+    background: rgba(189, 189, 189, 0.05);
+}
+.form-radio-btn-check {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 12px;
+}
+.form-radio-button.selected-radio {
+    background: linear-gradient(92.15deg, #202A44 -0.17%, #325F6B 100%);
+}
+.form-radio-button.selected-radio .form-radio-btn-check {
+    box-shadow: unset;
+    background-image: url('Checkbox.svg');
+}
+.radio-button-title {
+    width: 208px;
+}
+.form-radio-button.selected-radio .radio-button-title {
+    color: #fff;
+}
+.form-continue-btn.disabled {
+    opacity: 0.5;
+}

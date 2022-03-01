@@ -20,7 +20,7 @@ add_filter( 'wp_calculate_image_sizes', 'filter_wp_calculate_image_sizes', 10, 5
  * displays image from library without srcset
  */
 
-function the_media_image( $img_id=false, $class='' , $size='full', $html_id=false ){
+    function the_media_image( $img_id=false, $class='' , $size='full', $html_id=false ){
 
 	if ( empty($img_id) ) return;
 
